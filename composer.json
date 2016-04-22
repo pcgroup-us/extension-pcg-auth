@@ -1,5 +1,5 @@
 {
-  "name": "pcgroup-us/extension-tao-pcg-auth",
+  "name": "pcgroup-us/extension-pcg-auth",
   "description": "PCG authoring extension",
   "type": "tao-extension",
   "authors": [{
