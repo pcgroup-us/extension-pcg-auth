@@ -26,11 +26,22 @@ return array(
     'version' => '1.0.0',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
-        'pcgCore' => '>=1.0.0'
+        'pcgCore' => '>=1.0.0',
+        'funcAcl' => '*',
+        'taoItems' => '*',
+        'taoQtiItem' => '*',
+        'qtiItemPci' => '*',
+        'taoTests' => '*',
+        'taoQtiTest' => '*',
+        'taoTestTaker' => '*',
+        'taoGroups' => '*',
+        'taoOutcomeUi' => '*',
+        'taoOutcomeRds' => '*',
+        'taoDeliveryRdf' => '*'
     ),
     'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#pcgAuthManager',
     'acl' => array(
-        array('grant','http://www.tao.lu/Ontologies/generis.rdf#pcgAuthManager',array('ext' => 'pcgAuth'))
+        array('grant','http://www.tao.lu/Ontologies/generis.rdf#pcgAuthManager', array('ext' => 'pcgAuth'))
     ),
     'install' => array(),
     'uninstall' => array(),
