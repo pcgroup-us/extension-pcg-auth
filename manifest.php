@@ -23,7 +23,7 @@ return array(
     'label' => 'PCG authoring extension',
     'description' => 'Meta extension for the authoring env',
     'license' => 'GPL-2.0',
-    'version' => '1.0.0',
+    'version' => '1.1.0',
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'pcgCore' => '>=1.0.0',
