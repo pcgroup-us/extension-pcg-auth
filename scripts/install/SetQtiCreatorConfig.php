@@ -22,12 +22,16 @@
 namespace pcgroupUs\pcgAuth\scripts\install;
 
 use common_ext_action_InstallAction;
+use oat\taoQtiItem\model\QtiCreatorClientConfigRegistry;
 
 class SetQtiCreatorConfig extends common_ext_action_InstallAction
 {
     public function __invoke($params)
     {
-        
+        $registry = QtiCreatorClientConfigRegistry::getRegistry();
+
+        $registry->removePlugin('back', 'taoQtiItem/qtiCreator/plugins/navigation/back', 'navigation');
+        $registry->registerPlugin('saveAndClose', 'pcgAuth/qtiCreator/plugins/menu/saveAndClose', 'menu');
 
         return new \common_report_Report(\common_report_Report::TYPE_SUCCESS, 'Test runner settings added to Tao Qti Test extension');
     }

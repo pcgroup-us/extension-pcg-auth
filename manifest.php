@@ -43,7 +43,11 @@ return array(
     'acl' => array(
         array('grant','http://www.tao.lu/Ontologies/generis.rdf#pcgAuthManager', array('ext' => 'pcgAuth'))
     ),
-    'install' => array(),
+    'install' => array(
+        'php' => array(
+            'pcgroupUs\\pcgAuth\\scripts\\install\\SetQtiCreatorConfig'
+        )
+    ),
     'uninstall' => array(),
     'routes' => array(
         '/pcgAuth' => 'pcgroupUs\\pcgAuth\\controller'
