@@ -27,9 +27,17 @@ return array(
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'pcgCore' => '>=1.0.0',
-        'taoCe' => '>=1.3.0',
         'itemqtiCreator' => '>=1.0.0',
-        'taoQtiItem' => '2.27.0'
+        'taoQtiItem' => '>=2.27.0',
+        'funcAcl' => '*',
+        'qtiItemPci' => '*',
+        'taoTests' => '*',
+        'taoQtiTest' => '*',
+        'taoTestTaker' => '*',
+        'taoGroups' => '*',
+        'taoOutcomeUi' => '*',
+        'taoOutcomeRds' => '*',
+        'taoDeliveryRdf' => '*'
     ),
     'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#pcgAuthManager',
     'acl' => array(
