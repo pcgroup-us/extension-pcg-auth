@@ -27,9 +27,9 @@ return array(
     'author' => 'Open Assessment Technologies SA',
     'requires' => array(
         'pcgCore' => '>=1.0.0',
+        'itemqtiCreator' => '>=1.0.0',
+        'taoQtiItem' => '>=2.27.0',
         'funcAcl' => '*',
-        'taoItems' => '*',
-        'taoQtiItem' => '*',
         'qtiItemPci' => '*',
         'taoTests' => '*',
         'taoQtiTest' => '*',
